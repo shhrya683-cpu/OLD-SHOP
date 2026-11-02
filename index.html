@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10051e">
+<title>OLD SHOP | المتجر الرسمي</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#0b0612;
+  --panel:#170d25;
+  --purple:#9b4dff;
+  --light:#d9b5ff;
+  --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Cairo',sans-serif;
+  background:
+  radial-gradient(ellipse at 50% 0%,#39145d 0%,transparent 45%),
+  var(--bg);
+  color:var(--white);
+  min-height:100vh;
+}
+header{
+  position:sticky;top:0;z-index:10;
+  display:flex;justify-content:space-between;
+  align-items:center;padding:17px 7%;
+  background:#10071ddd;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #9b4dff30;
+}
+.logo{
+  font-size:25px;font-weight:900;
+  color:#d7adff;letter-spacing:2px;
+  text-shadow:0 0 20px #a34cff;
+}
+nav{display:flex;gap:20px}
+nav a{
+  color:#d6c3e9;text-decoration:none;
+  font-size:13px;transition:.3s
+}
+nav a:hover{color:#c58aff}
+.hero{
+  text-align:center;padding:95px 20px 75px;
+  position:relative;overflow:hidden;
+}
+.hero small{
+  color:#c18aff;letter-spacing:4px;
+  font-size:12px;font-weight:800
+}
+.hero h1{
+  font-size:clamp(48px,10vw,90px);
+  font-weight:900;line-height:1.4;
+  background:linear-gradient(120deg,#fff,#d6aaff,#8736ff);
+  -webkit-background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 0 25px #963dff55);
+}
+.hero p{color:#b9a9c9;margin:8px auto 25px}
+.btn{
+  display:inline-block;padding:12px 28px;
+  border-radius:12px;text-decoration:none;
+  font-family:inherit;font-weight:800;
+  color:white;background:linear-gradient(120deg,#7027c5,#ad64ff);
+  box-shadow:0 0 25px #963dff50;
+  transition:.3s
+}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 35px #a44cff90}
+.section{padding:55px 7%;max-width:1250px;margin:auto}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:30px;color:#e5caff}
+.heading p{font-size:13px;color:#9e8bad}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+}
+.card{
+  position:relative;
+  padding:27px 20px;
+  border:1px solid #a65bff38;
+  border-radius:22px;
+  background:linear-gradient(145deg,#241235,#120b1b);
+  text-align:center;
+  overflow:hidden;
+  transition:.35s;
+}
+.card:hover{
+  transform:translateY(-9px);
+  border-color:#b66bff;
+  box-shadow:0 15px 45px #8b38d52c;
+}
+.icon{
+  width:78px;height:78px;margin:0 auto 17px;
+  display:grid;place-items:center;
+  border-radius:23px;
+  font-size:35px;
+  background:linear-gradient(145deg,#7736b9,#32134e);
+  box-shadow:0 0 30px #9d45ff40;
+}
+.card h3{font-size:22px;margin-bottom:8px}
+.price{font-size:25px;font-weight:900;color:#d5a7ff}
+.price small{font-size:12px;color:#a895b8}
+.card p{font-size:12px;color:#a99ab6;margin:10px 0 22px}
+.card .btn{width:100%;border:0;cursor:pointer}
+.tag{
+  position:absolute;top:13px;right:13px;
+  font-size:10px;padding:4px 10px;
+  border-radius:20px;background:#7134a8;color:white
+}
+.info{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px
+}
+.info-card{
+  padding:25px;border-radius:18px;
+  background:#1b1029;border:1px solid #8c4acb40;
+  text-align:center
+}
+.info-card h3{color:#d8b4ff;margin-bottom:8px}
+.info-card p{font-size:13px;color:#b9a9c9}
+.info-card a{color:#d7aaff;text-decoration:none}
+footer{
+  text-align:center;padding:30px 15px;
+  margin-top:50px;background:#100819;
+  border-top:1px solid #963dff30;
+  color:#927fa5;font-size:12px
+}
+footer strong{color:#d6adff}
+@media(max-width:600px){
+ header{padding:13px 5%}
+ .logo{font-size:20px}
+ nav{gap:10px}
+ nav a{font-size:11px}
+ .hero{padding:75px 15px 55px}
+ .section{padding:40px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">OLD SHOP</div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#contact">الدعم</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <small>WELCOME TO OUR WORLD</small>
+  <h1>OLD SHOP</h1>
+  <p>الفخامة تبدأ من هنا .. اختر رتبتك وارتقِ بتجربتك</p>
+  <a href="#products" class="btn">اكتشف المنتجات</a>
+</section>
+
+<section class="section" id="products">
+  <div class="heading">
+    <h2>المنتجات الحصرية</h2>
+    <p>اختر المنتج المناسب لك</p>
+  </div>
+
+  <div class="products">
+
+    <div class="card">
+      <span class="tag">VIP</span>
+      <div class="icon">👑</div>
+      <h3>VIP RANK</h3>
+      <div class="price">6,000,000 <small>كريدت</small></div>
+      <p>احصل على رتبة VIP المميزة</p>
+      <button class="btn" onclick="order('رتبة VIP','6,000,000 كريدت')">اطلب الآن</button>
+    </div>
+
+    <div class="card">
+      <span class="tag">PLATINUM</span>
+      <div class="icon">💎</div>
+      <h3>PLATINUM RANK</h3>
+      <div class="price">5,000,000 <small>كريدت</small></div>
+      <p>تميز برتبة بلاتينيوم</p>
+      <button class="btn" onclick="order('رتبة بلاتينيوم','5,000,000 كريدت')">اطلب الآن</button>
+    </div>
+
+    <div class="card">
+      <span class="tag">DIAMOND</span>
+      <div class="icon">✦</div>
+      <h3>DIAMOND RANK</h3>
+      <div class="price">7,000,000 <small>كريدت</small></div>
+      <p>احصل على رتبة دايموند الحصرية</p>
+      <button class="btn" onclick="order('رتبة دايموند','7,000,000 كريدت')">اطلب الآن</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="heading">
+    <h2>مركز التواصل</h2>
+    <p>نحن هنا لمساعدتك</p>
+  </div>
+
+  <div class="info">
+    <div class="info-card">
+      <h3>الدعم الفني</h3>
+      <p>للطلبات والاستفسارات</p>
+      <br>
+      <a href="https://discord.gg/BrTyu2pGY" target="_blank">تواصل معنا عبر Discord</a>
+    </div>
+
+    <div class="info-card">
+      <h3>مسؤول السيرفر</h3>
+      <p>5__05</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>OLD SHOP</strong>
+  <p>جميع الحقوق محفوظة © OLD SHOP 2026</p>
+  <p>Designed with luxury 💜</p>
+</footer>
+
+<script>
+function order(product,price){
+  const message =
+    'السلام عليكم ابي اطلب من OLD SHOP\n' +
+    'المنتج: '+product+'\n' +
+    'السعر: '+price+'\n' +
+    'يرجى مساعدتي في إكمال الطلب';
+
+  const url='https://discord.gg/BrTyu2pGY';
+  navigator.clipboard?.writeText(message);
+  window.open(url,'_blank');
+  alert('تم تجهيز رسالة الطلب ونسخها إن سمح المتصفح بذلك. أرسلها في الدعم الفني.');
+}
+</script>
+
+</body>
+</html>
